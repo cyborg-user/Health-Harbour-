@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePulse Patient Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1d1d1d;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #68c1ea;
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+        }
+        . consent {
+            margin-top: 20px;
+        }
+        button {
+            background-color: #68c1ea;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #56a3c9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome 👋</h1>
+        <h2>Personal Information</h2>
+        <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone">
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob">
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address">
+        </div>
+        <div class="form-group">
+            <label for="emergency">Emergency Contact</label>
+            <input type="text" id="emergency">
+        </div>
+        <div class="form-group">
+            <label for="occupation">Occupation</label>
+            <input type="text" id="occupation">
+        </div>
+        
+        <h2>Medical Information</h2>
+        <div class="form-group">
+            <label for="primary-condition">Primary Condition</label>
+            <select id="primary-condition">
+                <option value="Asthma">Asthma</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="insurance-number">Insurance Policy Number</label>
+            <input type="text" id="insurance-number">
+        </div>
+        <div class="form-group">
+            <label for="allergies">Allergies</label>
+            <input type="text" id="allergies">
+        </div>
+        <div class="form-group">
+            <label for="medications">Current Medications</label>
+            <input type="text" id="medications">
+        </div>
+        
+        <h2>Identification and Verification</h2>
+        <div class="form-group">
+            <label for="birth-certificate">Birth Certificate No.</label>
+            <input type="text" id="birth-certificate">
+        </div>
+        <div class="form-group">
+            <label for="ssn">Social Security Number</label>
+            <input type="text" id="ssn">
+        </div>
+        
+        <h2>Consent and Privacy</h2>
+        <div class="consent">
+            <input type="checkbox" id="consent-treatment">
+            <label for="consent-treatment">I consent to receive treatment for my health condition.</label>
+
+            <input type="checkbox" id="consent-disclosure">
+            <label for="consent-disclosure">I consent to the use and disclosure of my health information for treatment purposes.</label>
+
+            <input type="checkbox" id="acknowledge">
+            <label for="acknowledge">I acknowledge that I have reviewed and agree to the privacy policy.</label>
+        </div>
+        
+        <button type="submit">Submit and Continue</button>
+    </div>
+
+</body>
+</html>
